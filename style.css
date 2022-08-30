@@ -1,0 +1,260 @@
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header{
+    background-color: #B6C8CE;
+    padding: 20px 0;
+}
+
+.cabecalho-logo{
+    width: 120px;
+}
+
+.cabecalho-nav a img:hover{
+    cursor: pointer;
+}
+
+.cabecalho-nav{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav li a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    color: #7253C0;
+    text-shadow: 1px 1px 1px #343C64;
+}
+
+nav li a:hover{
+    text-shadow: 1px 1px 1px #FA345C, -1px -1px 1px #FA345C;
+}
+nav li a:hover .icone{
+    width: 25px;
+}
+
+.icone{
+    width: 22px;
+    margin: auto 5px;
+}
+
+main{
+    background: linear-gradient(#B6C8CE, #4C5270 40%);
+}
+
+.titulo{
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: #f5f2d0;
+}
+
+.titulo:first-child{
+    padding-top: 80px;
+}
+
+.texto{
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    color: #f5f2d0;
+    padding: 40px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: #4C5270;
+    color: #f5f2d0;
+}
+
+.copyright{
+    margin: 20px
+}
+
+.video-propaganda{
+    width: 560px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/*Produtos*/
+
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px solid #343C64;
+    border-radius: 30px;
+    background: #f5f2d0;
+    color: #343C64;
+}
+
+.produtos li:hover{
+    background: #343C64;
+    border-color: #f5f2d0;
+    color: #f5f2d0;
+}
+
+.produtos li:active{
+    background: #7253C0;
+    border-color: #f5f2d0;
+}
+
+.produtos h2{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.produtos img{
+    margin: 30px 0;
+    width: 200px;
+}
+
+.produto-descricao{
+    font-size: 16px;
+}
+
+.produto-preco{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.produto-estoque{
+    margin: 3px;
+}
+
+/*Anuncie*/
+
+form{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-form{
+    text-align: left;
+    color:  #343C64;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-shadow: 1px 1px 1px #FA345C;  
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+    color: #FA345C;;
+    text-shadow: 1px 1px 1px #343C64;    
+}
+
+.input-padrao{
+    display: block;
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.input-padrao:focus{
+    box-shadow: 3px 3px 3px #343C64,  -3px -3px 3px #343C64;    
+}
+
+.input-imagem{
+    margin: 0  0 35px;
+    color: #f5f2d0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: #FA345C;
+    color: white;
+    font-weight: bold; 
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.enviar:hover{
+    background: #343C64;
+    transform: scale(1.05);
+}
+
+.enviar:active{
+    background: #343C64;
+    transform: scale(1.05);
+}
+
+/*Responsividade*/
+
+@media screen and (max-width:480px){
+    .cabecalho-nav, .titulo, .texto, 
+    form, .input-padrao, .video-propaganda{
+        width: auto;
+        text-align: center;
+    }
+    .cabecalho-logo{
+        width: 80px;
+        margin: 0 0 20px;
+    }
+    nav{
+        display: inline-flex;
+        position: static;
+        margin: 10px 20px;
+    }
+    .titulo:first-child{
+        padding: 20px 0 0;
+    }
+
+    .produtos li{
+        display: flow-root;
+        margin-left: 5%;
+        text-align: center;
+    }
+    
+    .titulo-form{
+        width: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .input-padrao,
+    .input-imagem, .enviar{
+        width: 80%;
+        text-align: center;
+        position: static;
+        margin: 1em 1em;
+    }
+}
